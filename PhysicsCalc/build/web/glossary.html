@@ -1,0 +1,323 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Physics Calculator</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-custom.css">
+	<!-- Optional theme -->
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap/js/jQuery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="unitConverter.js"></script>
+</head>
+
+<body>
+	<div class = "container">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+						<img src="Main-Logo-PhysCalc.jpg" alt="PhysCalc" width = "100%">
+				</div>
+		<div class="row clearfix">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<nav class= "navbar navbar-default navbar-inner" role="navigation" style="margin:0px">
+            	<!--<div class="navbar navbar-fixed-top navbar-inverse" role="navigation"> -->
+  				<div class="container-fluid">
+    			<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+      				<a class="navbar-brand brand" href="home.html">Home</a>
+    			</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="calculate.html">Calculator</a></li>
+        <li><a href="equationFinder.html">Equation Finder</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Glossary <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="glossary.html#acceleration">Acceleration</a></li>
+            <li><a href="glossary.html#centripetal">Centripetal Acceleration</a></li>
+            <li><a href="glossary.html#coefficient">Coefficient  of Friction</a></li>
+            <li><a href="glossary.html#conservation">Conservation of Momentum</a></li>
+            <li><a href="glossary.html#distance">Distance</a></li>
+            <li><a href="glossary.html#force">Force</a></li>
+            <li><a href="glossary.html#frequency">Frequency</a></li>
+            <li><a href="glossary.html#friction">Friction</a></li>
+            <li><a href="glossary.html#gravitational">Gravitational Constant</a></li>
+            <li><a href="glossary.html#hooke">Hooke's Law</a></li>
+            <li><a href="glossary.html#impulse">Impulse</a></li>
+            <li><a href="glossary.html#iposition">Initial Position</a></li>
+            <li><a href="glossary.html#ivelocity">Initial Velocity</a></li>
+            <li><a href="glossary.html#kinetic">Kinetic Energy</a></li>
+            <li><a href="glossary.html#length">Length</a></li>
+            <li><a href="glossary.html#mass">Mass</a></li>
+            <li><a href="glossary.html#momentum">Momentum</a></li>
+            <li><a href="glossary.html#newt1">Newton's 1st Law</a></li>
+            <li><a href="glossary.html#newt2">Newton's 2nd Law</a></li>
+            <li><a href="glossary.html#new3">Newton's 3rd Law</a></li>
+            <li><a href="glossary.html#normal">Normal Force</a></li>
+            <li><a href="glossary.html#period">Period</a></li>
+            <li><a href="glossary.html#potential">Potential Energy</a></li>
+            <li><a href="glossary.html#peSpring">Potential Energy of a Spring</a></li>
+            <li><a href="glossary.html#power">Power</a></li>
+            <li><a href="glossary.html#radius">Radius</a></li>
+            <li><a href="glossary.html#springConst">Spring Constant</a></li>
+            <li><a href="glossary.html#springForce">Spring Force</a></li>
+            <li><a href="glossary.html#time">Time</a></li>
+            <li><a href="glossary.html#torque">Torque</a></li>
+            <li><a href="glossary.html#velocity">Velocity</a></li>
+            <li><a href="glossary.html#work">Work</a></li>
+          </ul>
+        </li>
+      </ul>
+  
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+				
+			<div class="row clearfix">
+			 
+				<div class="col-md-8 col-sm-6 col-xs-12 column well" style="margin-top:10px">
+		<h1 id="top">Glossary</h1>
+		</h1>
+	<br>
+		<h3 id = "acceleration">Acceleration</h3>
+		<p class="content" >Acceleration is the rate at which an objects velocity changes with respect to time. 
+			<br>Acceleration is caused by a net force on an object. 
+			<br>The unit for acceleration is meters per second squared or m/s<sup>2</sup>.
+		</p>
+	<br>
+		<h3 id ="centripetal">Centripetal Acceleration</h3>
+		<p class="content">	Centripetal Acceleration is when an object is moving in a circle at a constant speed. 
+			<br>Since the object is changing direction but is not changing the speed at which it is moving it is said to be accelerating.
+		</p>
+	<br>
+		<h3 id ="coefficient">Coefficient  of Friction</h3>
+		<p class="content">The Coefficient of Friction is the amount of force resistance between two objects when one object is slid over the other object divided by the amount of force pressing the two objects together.
+		</p>
+	<br>
+		<h3 id ="conservation">Conservation of Momentum</h3>
+		<p class="content">The Law of Conservation of Momentum states that when two objects come together, their momementum before they collide is equal to the momentum after they collide.
+	</p>
+	<br>
+		<h3 id ="distance">Distance</h3>
+		<p class="content">Distance is the amount of space between two objects. 
+			<br>The unit for distance is meters or m.
+	</p>
+	<br>
+		<h3 id ="force">Force</h3>
+		<p class="content">Force is required in order to change the direction or velocity of an object. 
+			<br>Force is measured in Newtons or N.
+	</p>
+	<br>
+		<h3 id ="frequency">Frequency</h3>
+		<p class="content">Frequency is how often an event happens each second. 
+			<br>The unit for frequency is hertz or Hz.
+	</p>
+	<br>
+		<h3 id ="friction">Friction</h3>
+		<p class="content"></p>Friction is the amount of force or the amount of resistance of moving an object over another object.
+	<br>
+		<h3 id="gravitational">Gravitational Constant</h3>
+		<p class="content"></p>The Gravitational Constant is part of the equation for Newton's Law of Universal Gravitation. <em>G</em>=6.67x10<sup>-11</sup>N(m/kg)<sup>2</sup>
+	<br>
+		<h3 id="hooke">Hooke's Law</h3>
+		<p class="content">Hooke's Law states that the amount of force required to compress or stretch a spring is equal to the spring constant times the distance the spring is compressed or stretched.
+	</p>
+	<br>
+		<h3 id ="impulse">Impulse</h3>
+		<p class="content">Impulse is the change in momentum. 
+			<br>The unit for impulse is the newton second or Ns.
+	</p>
+	<br>
+		<h3 id ="iposition">Initial Position</h3>
+		<p class="content">Initial Position is the position of the object before it changes.
+	</p>
+	<br>
+		<h3 id ="ivelocity">Initial Velocity</h3>
+		<p class="content">Initial Velocity is the velocity of the object before it changes.
+	</p>
+	<br>
+		<h3 id ="kinetic">Kinetic Energy</h3>
+		<p class="content">Kinetic Energy is the energy of an object due to its mass and velocity. 
+			<br>The unit for Kinetic Energy is the Joule or J.
+	</p>
+	<br>
+		<h3 id ="length">Length</h3>
+		<p class="content">Length is the distance from one end of an object to the other end of the object.
+	</p>
+	<br>
+		<h3 id ="mass">Mass</h3>
+		<p class="content">Mass is how much matter there is in an object.
+	</p>
+	<br>
+		<h3 id ="momentum">Momentum</h3>
+		<p class="content">Momentum is an object moving. 
+			<br>Momentum is defined by the mass of the object and the velocity of the object. 
+			<br>An object with more momentum is harder to stop.
+	</p>
+    <br>
+		<h3 id="newt1">Newton's 1st Law</h3>
+		<p class="content">An objects motion is constant unless an external force is applied to the object to change it's momentum.
+	</p>
+    <br>
+		<h3 id ="newt2">Newton's 2nd Law</h3>
+		<p class="content">The acceleration of an object is dependent on the net force of the object and the mass of the object.
+	</p>
+    <br>
+		<h3 id ="newt3">Newton's 3rd Law</h3>
+		<p class="content">When there is a force in one direction there is an equal force applied in the opposite direction.
+	</p>
+	<br>
+		<h3id ="normal">Normal Force</h3>
+		<p class="content">The normal force is the force on an object that is perpendicular to the surface the object is on.
+	</p>
+	<br>
+		<h3 id="period">Period</h3>
+		<p class="content">Period is the amount of time to complete one cycle.
+	</p>
+	<br>
+		<h3 id ="potential">Potential Energy</h3>
+		<p class="content">Potential Energy is the energy stored in an object.
+			<br>The higher the mass or height of an object the higher the Potential Energy. 
+			<br>The unit for Potential Energy is the Joule or J.
+	</p>
+	<br>
+		<h3 id ="pespring">Potential Energy of a Spring</h3>
+		<p class="content">The Potential Energy of a Spring is the amount of energy based on how far the spring is stretched. 
+			<br>The farther it is stretched the higher the potential energy.
+	</p>
+	<br>
+		<h3 id ="power">Power</h3>
+		<p class="content">Power is the amount of energy used in a given amount of time. 
+			<br>The unit for power is the Watt or the Joule per second.
+	</p>
+	<br>
+		<h3 id ="radius">Radius</h3>
+		<p class="content">Radius is the distance from the center of the circle to the edge of the circle.
+	</p>
+	<br>
+		<h3 id ="springConst">Spring Constant</h3>
+		<p class="content">The Spring Constant is the stiffness of the spring. 
+			<br>The stiffer the spring the higher the for force must be to move the spring.
+	</p>
+	<br>
+		<h3 id ="springForce">Spring Force</h3>
+		<p class="content">Spring Force is the force of a stretched or compressed spring on an object that is attached to the spring.
+	</p>
+	<br>
+		<h3 id ="time">Time</h3>
+		<p class="content">Time is how long it takes for an action to occur. 
+			<br>The unit for time is the second or s.
+	</p>
+	<br>
+		<h3 id ="torque">Torque</h3>
+		<p class="content">Torque is the amount of force required to turn an object around the pivot point. 
+			<br>The unit for torque is the newton meter or Nm.
+	</p>
+	<br>
+		<h3 id="velocity">Velocity</h3>
+		<p class="content">Velocity is the rate of change in the position of an object. 
+			<br>Velocity is composed of the speed the object is traveling and the direction the object is traveling.
+	</p>
+	<br>
+		<h3 id ="work">Work</h3>
+		<p class="content">Work is the force required to move an object multiplied by the distance the object is moved. 
+			<br>The unit for work is the Joule or J.
+	</p>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12" style="margin-top:10px">
+                    <div class = "well sidebar-nav" > 
+					<h2 style="text-align: center">Unit Converter</h2>
+			<form name = "topicForm">
+				<label> Select a Topic: 
+				<select name="topicMenu" size=1  onChange="updateUnitMenu(this, document.currentUnitForm.currentUnitMenu); updateUnitMenu(this, document.currentUnitForm.preferredUnitMenu)">
+
+				<option>_____________________________
+				<!-- The underscore line above pre-stretches the drop-down menu to a sufficient length -->
+				<option>
+				<option>
+				<option>
+				<option>
+				<option>
+				</select>
+				</option>
+				</option>
+				</option>
+				</label>
+
+			</form>
+
+			<script LANGUAGE="JavaScript">
+				fillMenuWithArray(document.topicForm.topicMenu, topic);
+			</SCRIPT>
+
+			<FORM name="currentUnitForm" onSubmit="return false">
+			
+			<label>Original Value: <Input type = "text" name = "unitInput"  size = "25" value = ""></label>
+			<br>
+			<label>Select Current Unit: 
+			<SELECT NAME="currentUnitMenu">
+				<OPTION>---- Select a unit ----
+				<option>
+				<option>
+				<option>
+				<option>
+				<option>
+			</SELECT>
+			</label>
+			<br>
+			<label>Select Preferred Unit: 
+            <SELECT NAME="preferredUnitMenu">
+				<OPTION>---- Select a Unit -----
+				<option>
+				<option>
+				<option>
+				<option>
+				<option>
+			</SELECT>
+			<br>
+			<label>Converted Value: <Input type = "text" name = "convertedValue"  size = "25"></label>
+            </label>
+            <p>
+                <Input class = "btn-primary" type = "button" name = "userSubmit" value = "Submit" onClick = "calculateUnit(document.currentUnitForm, document.currentUnitForm)">
+                <Input type = "reset" name = "clearValue" value = "Clear">
+             </p>
+			</form>
+			<SCRIPT LANGUAGE="JavaScript">
+			<!-- ;
+
+			//At start up or refresh, the first topic is automatically selected, so initialize unit array for that
+			
+			if (document.topicForm.topicMenu.selectedIndex == 0){
+			if (document.images){
+				// Also, define the window name for correct targeting
+				window.name="JSUC_main";
+				fillMenuWithArray(document.currentUnitForm.currentUnitMenu, unit[0]);
+				fillMenuWithArray(document.currentUnitForm.preferredUnitMenu, unit[0]);
+			}else{
+				//In case of browser error 
+				alert("The browser you are using won't let you run JSUC correctly. Maybe you should upgrade...");
+			}
+			}
+			// -->
+			</SCRIPT>
+
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

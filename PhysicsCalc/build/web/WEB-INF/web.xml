@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Calculate</servlet-name>
+        <servlet-class>PhysicsCalc.Calculate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AppInit</servlet-name>
+        <servlet-class>PhysicsCalc.AppInit</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FindEquations</servlet-name>
+        <servlet-class>PhysicsCalc.FindEquations</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GraphicsController</servlet-name>
+        <servlet-class>PhysicsCalc.GraphicsController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VarInit</servlet-name>
+        <servlet-class>PhysicsCalc.VarInit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Calculate</servlet-name>
+        <url-pattern>/Calculate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AppInit</servlet-name>
+        <url-pattern>/AppInit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FindEquations</servlet-name>
+        <url-pattern>/FindEquations</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GraphicsController</servlet-name>
+        <url-pattern>/GraphicsController</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>VarInit</servlet-name>
+        <url-pattern>/VarInit</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

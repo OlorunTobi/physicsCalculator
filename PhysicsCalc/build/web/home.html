@@ -1,0 +1,188 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Physics Calculator</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-custom.css">
+	<!-- Optional theme -->
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap/js/jQuery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="unitConverter.js"></script>
+</head>
+
+<body>
+	<div class = "container">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+						<img src="Main-Logo-PhysCalc.jpg" alt="PhysCalc" width = "100%">
+				</div>
+		<div class="row clearfix">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<nav class= "navbar navbar-default navbar-inner" role="navigation" style="margin:0px">
+            	<!--<div class="navbar navbar-fixed-top navbar-inverse" role="navigation"> -->
+  				<div class="container-fluid">
+    			<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+      				<a class="navbar-brand brand" href="home.html">Home</a>
+    			</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="calculate.html">Calculator</a></li>
+        <li><a href="equationFinder.html">Equation Finder</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Glossary <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="glossary.html#acceleration">Acceleration</a></li>
+            <li><a href="glossary.html#centripetal">Centripetal Acceleration</a></li>
+            <li><a href="glossary.html#coefficient">Coefficient  of Friction</a></li>
+            <li><a href="glossary.html#conservation">Conservation of Momentum</a></li>
+            <li><a href="glossary.html#distance">Distance</a></li>
+            <li><a href="glossary.html#force">Force</a></li>
+            <li><a href="glossary.html#frequency">Frequency</a></li>
+            <li><a href="glossary.html#friction">Friction</a></li>
+            <li><a href="glossary.html#gravitational">Gravitational Constant</a></li>
+            <li><a href="glossary.html#hooke">Hooke's Law</a></li>
+            <li><a href="glossary.html#impulse">Impulse</a></li>
+            <li><a href="glossary.html#iposition">Initial Position</a></li>
+            <li><a href="glossary.html#ivelocity">Initial Velocity</a></li>
+            <li><a href="glossary.html#kinetic">Kinetic Energy</a></li>
+            <li><a href="glossary.html#length">Length</a></li>
+            <li><a href="glossary.html#mass">Mass</a></li>
+            <li><a href="glossary.html#momentum">Momentum</a></li>
+            <li><a href="glossary.html#newt1">Newton's 1st Law</a></li>
+            <li><a href="glossary.html#newt2">Newton's 2nd Law</a></li>
+            <li><a href="glossary.html#new3">Newton's 3rd Law</a></li>
+            <li><a href="glossary.html#normal">Normal Force</a></li>
+            <li><a href="glossary.html#period">Period</a></li>
+            <li><a href="glossary.html#potential">Potential Energy</a></li>
+            <li><a href="glossary.html#peSpring">Potential Energy of a Spring</a></li>
+            <li><a href="glossary.html#power">Power</a></li>
+            <li><a href="glossary.html#radius">Radius</a></li>
+            <li><a href="glossary.html#springConst">Spring Constant</a></li>
+            <li><a href="glossary.html#springForce">Spring Force</a></li>
+            <li><a href="glossary.html#time">Time</a></li>
+            <li><a href="glossary.html#torque">Torque</a></li>
+            <li><a href="glossary.html#velocity">Velocity</a></li>
+            <li><a href="glossary.html#work">Work</a></li>
+          </ul>
+        </li>
+      </ul>
+  
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+				
+			<div class="row clearfix">
+			 
+				<div class="col-md-8 col-sm-6 col-xs-12 column well" style="margin-top:10px">
+					<p>
+                        <h3>Welcome to Team Awesome's Physics Calculator!</h3> <br>
+						Using this tool, physics equations are a breeze. 
+						Simply use the navigation menu above to get started. 
+						You may select a topic via the glossary, 
+						or use the calculator itself to select an equation.
+						To get a list of possible equations with the included variables, 
+						use the Equation Finder!
+						<br>
+						<br>
+						<h4>Don't Forget to use the Unit Converter conveniently placed on all of our pages!</h4>
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12" style="margin-top:10px">
+                    <div class = "well sidebar-nav" > 
+					<h2 style="text-align: center">Unit Converter</h2>
+			<form name = "topicForm">
+				<label> Select a Topic: 
+				<select name="topicMenu" size=1  onChange="updateUnitMenu(this, document.currentUnitForm.currentUnitMenu); updateUnitMenu(this, document.currentUnitForm.preferredUnitMenu)">
+
+				<option>_____________________________
+				<!-- The underscore line above pre-stretches the drop-down menu to a sufficient length -->
+				<option>
+				<option>
+				<option>
+				<option>
+				<option>
+				</select>
+				</option>
+				</option>
+				</option>
+				</label>
+
+			</form>
+
+			<script LANGUAGE="JavaScript">
+				fillMenuWithArray(document.topicForm.topicMenu, topic);
+			</SCRIPT>
+
+			<FORM name="currentUnitForm" onSubmit="return false">
+			
+			<label>Original Value: <Input type = "text" name = "unitInput"  size = "25" value = ""></label>
+			<br>
+			<label>Select Current Unit: 
+			<SELECT NAME="currentUnitMenu">
+				<OPTION>---- Select a unit ----
+				<option>
+				<option>
+				<option>
+				<option>
+				<option>
+			</SELECT>
+			</label>
+			<br>
+			<label>Select Preferred Unit: 
+            <SELECT NAME="preferredUnitMenu">
+				<OPTION>---- Select a Unit -----
+				<option>
+				<option>
+				<option>
+				<option>
+				<option>
+			</SELECT>
+			<br>
+			<label>Converted Value: <Input type = "text" name = "convertedValue"  size = "25"></label>
+            </label>
+            <p>
+                <Input class = "btn-primary" type = "button" name = "userSubmit" value = "Submit" onClick = "calculateUnit(document.currentUnitForm, document.currentUnitForm)">
+                <Input type = "reset" name = "clearValue" value = "Clear">
+             </p>
+			</form>
+			<SCRIPT LANGUAGE="JavaScript">
+			<!-- ;
+
+			//At start up or refresh, the first topic is automatically selected, so initialize unit array for that
+			
+			if (document.topicForm.topicMenu.selectedIndex == 0){
+			if (document.images){
+				// Also, define the window name for correct targeting
+				window.name="JSUC_main";
+				fillMenuWithArray(document.currentUnitForm.currentUnitMenu, unit[0]);
+				fillMenuWithArray(document.currentUnitForm.preferredUnitMenu, unit[0]);
+			}else{
+				//In case of browser error 
+				alert("The browser you are using won't let you run JSUC correctly. Maybe you should upgrade...");
+			}
+			}
+			// -->
+			</SCRIPT>
+
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
